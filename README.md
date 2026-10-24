@@ -2,7 +2,7 @@
 
 For JTDX desktop software, see [JTDX Companion](https://github.com/chrisraynerd/jtdx-companion).
 
-Display website: [www.dxpilot.co.uk](https://www.dxpilot.co.uk/). Firmware starts at version **0.5.0** for both supported display sizes.
+Display website: [www.dxpilot.co.uk](https://www.dxpilot.co.uk/). Latest firmware: **0.5.1** for both supported display sizes.
 
 **An HF propagation, DX spotting and shack clock display for 2.8-inch CYD and 3.5-inch ESP32-3248S035C touchscreens.**
 
@@ -15,10 +15,10 @@ screen, or select the matching package from [Releases](https://github.com/chrisr
 
 | Display | Firmware package | Controllers |
 | --- | --- | --- |
-| 2.8-inch CYD, tested standard and Diymore boards | [DX-Pilot-v0.5.0-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.0/DX-Pilot-v0.5.0-firmware.zip) | ILI9341 / ILI9341V, XPT2046 touch; 320 x 240 |
-| 3.5-inch ESP32-3248S035C | [DX-Pilot-v0.5.0-cyd35c-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.0/DX-Pilot-v0.5.0-cyd35c-firmware.zip) | ST7796, GT911 capacitive touch; 480 x 320 |
+| 2.8-inch CYD, tested standard and Diymore boards | [DX-Pilot-v0.5.1-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.1/DX-Pilot-v0.5.1-firmware.zip) | ILI9341 / ILI9341V, XPT2046 touch; 320 x 240 |
+| 3.5-inch ESP32-3248S035C | [DX-Pilot-v0.5.1-cyd35c-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.1/DX-Pilot-v0.5.1-cyd35c-firmware.zip) | ST7796, GT911 capacitive touch; 480 x 320 |
 
-Both display sizes have **v0.5.0 functionality**, built from the same application
+Both display sizes have **v0.5.1 functionality**, built from the same application
 source with separate display/touch profiles. The
 3.5-inch build fills the screen width and uses physical-size lettering. Both
 need 4 MB ESP32 flash. The 035R resistive model and other controller/wiring
@@ -37,7 +37,7 @@ that archive contains this documentation repository, not the application project
 - Observed propagation paths with day/night shading and the Sun's overhead position.
 - UTC/local clock, sunrise/sunset, and selected major contests now/next.
 - HamQSL HF day/night outlook with SFI and K.
-- Info menu with DXpedition and contest calendars, plus source/licence credits.
+- Info menu with DXpedition and contest calendars, device status and source/licence credits.
 - On-device and authenticated local web settings; independent page durations.
 
 It needs **2.4 GHz Wi-Fi and internet access**, but no radio/CAT connection or
@@ -77,7 +77,11 @@ relinking. Those are not an editable DX Pilot application project.
 DX Pilot includes browser ADIF import, worked/LoTW-confirmed DXCC comparisons,
 independent Club Log rarity alerts, custom Telnet clusters, Wi-Fi firmware updates
 and a home-weather clock. See [the user guide](VERSION-2-GUIDE.md).
-Both v0.5.0 builds include these features. Both hardware builds have been installed and checked over Wi-Fi. Rollback and restoration were also tested on the 3.5-inch board.
+Both builds include these features. Both hardware builds have been installed and checked over Wi-Fi. Rollback and restoration were also tested on the 3.5-inch board.
+For support, open **Info > Device status**. Next shows calendar errors and then
+storage file sizes; Refresh rechecks storage. These pages are read only and can
+be photographed without opening the web dashboard.
+
 Report bugs through Issues with the firmware version and board details. Do not
 attach Wi-Fi passwords, full flash backups, private logs or device login details.
 

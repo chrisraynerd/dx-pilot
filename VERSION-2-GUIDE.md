@@ -1,9 +1,9 @@
-# DX Pilot v0.5.0 guide
+# DX Pilot v0.5.1 guide
 
-Version 0.5.0 is available for both the 2.8-inch CYD and 3.5-inch 035C, with
+Version 0.5.1 is available for both the 2.8-inch CYD and 3.5-inch 035C, with
 matching functionality and separate display/touch drivers. Both builds have been installed and checked on their supported hardware.
 
-Wi-Fi update controls are in Web setup and Info > About > Updates.
+Wi-Fi update controls are in Web setup and Info > Sources > Updates.
 See [WIFI-UPDATES.md](WIFI-UPDATES.md). Use the browser installer for a first installation; compatible future releases can then be installed over Wi-Fi.
 
 ## Import your log
@@ -54,3 +54,12 @@ for your saved grid location. See [WEATHER-CLOCK.md](WEATHER-CLOCK.md).
 Device counting defaults to on, with a persistent opt-out in Advanced
 web settings. See [DEVICE-COUNTING.md](DEVICE-COUNTING.md) for the exact data,
 retention and how to switch it off.
+
+## On-screen device status
+
+Open **Info > Device status** for the firmware version, display model, Wi-Fi and
+feed connections, imported log count, storage and free memory. Tap **Next** for
+calendar download/save messages and saved-calendar ages, then **Next** again for
+log/calendar file sizes. **Refresh** takes a fresh storage snapshot. Nothing on
+these pages deletes logs, changes settings or restarts the device. A photo helps
+support diagnose problems without needing the local web dashboard.

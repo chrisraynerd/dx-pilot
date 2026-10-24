@@ -4,7 +4,7 @@ Both supported display sizes can check for updates and install compatible firmwa
 
 ## Check and install
 
-Open **Firmware updates & previous versions** in the device's local web setup, or **Info > About > Updates** on the display. Hourly checking is enabled by default and can be switched off. **Check now** shows the result beside the button. Finding an update never installs it automatically: confirm **Yes, install** when ready.
+Open **Firmware updates & previous versions** in the device's local web setup, or **Info > Sources > Updates** on the display. Hourly checking is enabled by default and can be switched off. **Check now** shows the result beside the button. Finding an update never installs it automatically: confirm **Yes, install** when ready.
 
 The display verifies the firmware for its hardware model, version, checksum and saved-data format before installing. It shows progress and restarts. Keep power connected during installation. Saved station details, Wi-Fi, touch calibration, page timings and imported log summary are retained.
 
