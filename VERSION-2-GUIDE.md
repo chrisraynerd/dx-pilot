@@ -1,6 +1,6 @@
-# DX Pilot v0.5.1 guide
+# DX Pilot v0.5.2 guide
 
-Version 0.5.1 is available for both the 2.8-inch CYD and 3.5-inch 035C, with
+Version 0.5.2 is available for both the 2.8-inch CYD and 3.5-inch 035C, with
 matching functionality and separate display/touch drivers. Both builds have been installed and checked on their supported hardware.
 
 Wi-Fi update controls are in Web setup and Info > Sources > Updates.

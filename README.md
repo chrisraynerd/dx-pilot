@@ -2,7 +2,7 @@
 
 For JTDX desktop software, see [JTDX Companion](https://github.com/chrisraynerd/jtdx-companion).
 
-Display website: [www.dxpilot.co.uk](https://www.dxpilot.co.uk/). Latest firmware: **0.5.1** for both supported display sizes.
+Display website: [www.dxpilot.co.uk](https://www.dxpilot.co.uk/). Latest firmware: **0.5.2** for both supported display sizes.
 
 **An HF propagation, DX spotting and shack clock display for 2.8-inch CYD and 3.5-inch ESP32-3248S035C touchscreens.**
 
@@ -15,10 +15,10 @@ screen, or select the matching package from [Releases](https://github.com/chrisr
 
 | Display | Firmware package | Controllers |
 | --- | --- | --- |
-| 2.8-inch CYD, tested standard and Diymore boards | [DX-Pilot-v0.5.1-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.1/DX-Pilot-v0.5.1-firmware.zip) | ILI9341 / ILI9341V, XPT2046 touch; 320 x 240 |
-| 3.5-inch ESP32-3248S035C | [DX-Pilot-v0.5.1-cyd35c-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.1/DX-Pilot-v0.5.1-cyd35c-firmware.zip) | ST7796, GT911 capacitive touch; 480 x 320 |
+| 2.8-inch CYD, tested standard and Diymore boards | [DX-Pilot-v0.5.2-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.2/DX-Pilot-v0.5.2-firmware.zip) | ILI9341 / ILI9341V, XPT2046 touch; 320 x 240 |
+| 3.5-inch ESP32-3248S035C | [DX-Pilot-v0.5.2-cyd35c-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.2/DX-Pilot-v0.5.2-cyd35c-firmware.zip) | ST7796, GT911 capacitive touch; 480 x 320 |
 
-Both display sizes have **v0.5.1 functionality**, built from the same application
+Both display sizes have **v0.5.2 functionality**, built from the same application
 source with separate display/touch profiles. The
 3.5-inch build fills the screen width and uses physical-size lettering. Both
 need 4 MB ESP32 flash. The 035R resistive model and other controller/wiring
@@ -79,8 +79,9 @@ independent Club Log rarity alerts, custom Telnet clusters, Wi-Fi firmware updat
 and a home-weather clock. See [the user guide](VERSION-2-GUIDE.md).
 Both builds include these features. Both hardware builds have been installed and checked over Wi-Fi. Rollback and restoration were also tested on the 3.5-inch board.
 For support, open **Info > Device status**. Next shows calendar errors and then
-storage file sizes; Refresh rechecks storage. These pages are read only and can
-be photographed without opening the web dashboard.
+storage file sizes and restart details. Refresh rechecks storage; Retry feeds
+on the calendar page requests another download. These pages can be photographed
+without opening the web dashboard.
 
 Report bugs through Issues with the firmware version and board details. Do not
 attach Wi-Fi passwords, full flash backups, private logs or device login details.

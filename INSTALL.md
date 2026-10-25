@@ -2,12 +2,12 @@
 
 ## Supported hardware
 
-Choose the firmware for your board. Both display sizes are v0.5.1 with matching functionality. Choose the correct hardware package.
+Choose the firmware for your board. Both display sizes are v0.5.2 with matching functionality. Choose the correct hardware package.
 
 - **2.8-inch CYD**, tested standard and Diymore ESP32-32E boards: ILI9341/ILI9341V LCD,
-  XPT2046 resistive touch, landscape 320 x 240. Use DX-Pilot-v0.5.1-firmware.zip.
+  XPT2046 resistive touch, landscape 320 x 240. Use DX-Pilot-v0.5.2-firmware.zip.
 - **3.5-inch ESP32-3248S035C**: ST7796 LCD, GT911 capacitive touch, landscape
-  480 x 320. Use DX-Pilot-v0.5.1-cyd35c-firmware.zip. The 035R is not supported.
+  480 x 320. Use DX-Pilot-v0.5.2-cyd35c-firmware.zip. The 035R is not supported.
 
 Both need 4 MB ESP32 flash. USB must support data as well as power.
 The 2.8-inch pin assignments are LCD CS15/DC2/SCK14/MOSI13/MISO12/backlight21; touch
