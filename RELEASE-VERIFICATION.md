@@ -1,16 +1,32 @@
-# v0.5.2 verification — 25 October 2026
+# v0.5.3 verification — 27 October 2026
 
-Both supported hardware profiles use the same application source. Private development images were installed and checked on both physical boards. The owner confirmed restart diagnostics and navigation are readable and working on each size.
+Both hardware profiles use the same application source. The owner confirmed
+frequency readability, spot details and the independent PSK/DX mode controls
+and Back navigation on both physical display sizes. Live unlabelled phone-band
+cluster reports were recovered as estimated SSB on each board. Europe reporter
+selection was checked against live reports and Country Files DXCC membership.
 
-Three consecutive calendar refreshes passed on each display after the final buffer correction: no restarts, no secure-connection errors, no leftover download files, and preserved settings/log metadata. The 3.5-inch board retained both 24,576-byte log slots and had 40 KB free storage; the 2.8-inch baseline had no imported log.
+Both clean 0.5.3 images were installed over Wi-Fi and accepted by startup checks.
+Each had PSK modes All, DX modes SSB, 80 cached PSK reports and 80 mapped paths,
+with Wi-Fi, PSK and cluster connected. Checked station/Wi-Fi/touch/page settings
+and imported-log metadata were preserved. The 3.5-inch log retains 11,105 contacts;
+the 2.8-inch baseline has no imported log.
 
-Host tests cover temporary-file cleanup boundaries, storage reserve and overflow checks, and restart-snapshot validation. Short checks cannot establish that all possible restart causes are resolved.
+Actual web controls were tested for independent checkbox state, rejection of an
+empty PSK or DX selection, and save/restart persistence. Core host regressions
+cover separate source-mode selection, explicit-mode precedence, unlabelled phone
+inference, digital/image/CW ambiguity, timestamps, Europe membership and existing
+fragmented login/Telnet behavior. Quiet live feeds do not prove every node format
+or traffic volume; historical spots are not fetched automatically.
 
-Final clean 0.5.2 images were then installed over Wi-Fi on both boards and accepted by startup checks. Three further consecutive calendar refreshes passed on EACH clean release image: both calendars OK, uptime increasing, no temporary files, unchanged settings/log metadata and log-slot sizes.
+Final application images:
 
-- 2.8-inch application: 1,727,808 bytes; SHA-256 `474da3402072b40565ba401c7065194c633ab22dc2d2e51b4aa9f2c9ee931f80`.
-- 3.5-inch application: 1,789,632 bytes; SHA-256 `9696cd6535c8a22c6ed9938f5a9be9779a92f1bbe663fe69ae2e3e4e2166ab94`.
+- 2.8-inch: 1,731,840 bytes; SHA-256 `57bde93241307b4930add9cb1483aacbc071ea677761400483fa35fd147a8bf2`.
+- 3.5-inch: 1,793,616 bytes; SHA-256 `ddb61ca94f43b189dbce3fde2691ad3fe1f84a6d3dfd60c03bfd13256433800e`.
 
-All 40 copied source/header inputs match the final source for each profile. The calendar policy host test and four OTA catalogue tests pass. All six firmware/relink/library archives pass integrity and private-file checks; relinking supplied objects reproduces each exact firmware image. All ten draft assets were uploaded with matching GitHub SHA-256 digests.
-
-The application source, private history, device snapshots and logs are not included in the public repository or packages.
+All 41 copied source/header inputs match final source for each profile. Both
+firmware packages pass installer and image identity/checksum validation. All six
+firmware/relink/library archives pass integrity and private-file checks. Relinking
+supplied objects reproduces both exact images. Third-party sources, notices and
+LGPL relinking materials accompany the firmware; editable application source,
+private history, device snapshots and logs remain private.

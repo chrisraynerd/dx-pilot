@@ -1,6 +1,6 @@
-# DX Pilot v0.5.2 guide
+# DX Pilot v0.5.3 guide
 
-Version 0.5.2 is available for both the 2.8-inch CYD and 3.5-inch 035C, with
+Version 0.5.3 is available for both the 2.8-inch CYD and 3.5-inch 035C, with
 matching functionality and separate display/touch drivers. Both builds have been installed and checked on their supported hardware.
 
 Wi-Fi update controls are in Web setup and Info > Sources > Updates.
@@ -36,11 +36,19 @@ An alert can be dismissed without recording a contact or confirmation.
 **Info → My log & DX alerts** shows the summary, country list and recent alerts.
 Clearing the log summary preserves station, Wi-Fi and display settings.
 
+## Separate propagation and spot modes
+
+Under **Settings > Modes**, open either **PSK propagation modes** or **DX spots
+modes**. Web setup has matching independent groups. PSK defaults to All modes
+on upgrade; your existing DX selection is kept. SSB-only DX no longer removes
+the FT8/FT4 reception evidence used by the propagation summary and map. Alert
+modes have their own controls. Save the settings to apply changes.
+
 ## Choosing your cluster
 
 In web setup or Settings > DX cluster, leave **Default** selected or choose
 **Custom** and enter a Telnet node address and port. Login options can usually
-remain blank. Choose UK, Worldwide or custom reporting stations, then **Test
+remain blank. Choose UK, Europe, Worldwide or custom reporting stations, then **Test
 connection** for a clear result without saving. Save settings when you want the
 choice to survive a restart. See [Choosing a DX cluster](CLUSTERS.md).
 

@@ -22,6 +22,7 @@ The test temporarily interrupts the normal cluster connection. PSK propagation
 remains independent; test reports do not enter spot caches or trigger DX alerts.
 
 **UK stations** preserves the existing G*,M*,2* reporting-prefix filter.
+**European stations** uses the reporter's DXCC continent from Country Files.
 **Worldwide stations** includes reports from all spotters. **Custom reporting
 stations** accepts exact callsigns separated by commas and prefixes ending in *.
 Worldwide reports do not establish that a station is audible from your home;
@@ -50,3 +51,26 @@ password dedicated to that node. On the display, Show reveals an edited password
 only while you are editing it.
 
 Available on both supported display sizes.
+
+## Modes and frequencies
+
+PSK propagation and DX spots have separate mode selections under **Settings >
+Modes**, and separate checkbox groups in web setup. On upgrade, your previous
+mode selection stays with DX spots; PSK starts at All modes. Choose SSB for DX
+spots while retaining FT8/FT4 reports for the PSK summary and map. DX alert modes
+remain separate, and calendars continue using the DX mode selection.
+
+An explicit mode in a cluster comment takes priority, case-insensitively. When
+no mode is stated, reports in conservative phone-band segments can appear as
+**SSB***. The asterisk means estimated from frequency; the details explain it.
+Ambiguous digital, CW and image segments remain unspecified. This is a useful
+estimate, not proof of the transmitted mode.
+
+The right-hand DX column shows MHz to 100 Hz precision. Tap a row for its
+reporter, full frequency, age and other details. Cluster reception is live;
+recent history is not downloaded automatically when connecting.
+
+A station name containing a slash may be rejected as a node login. Under Custom,
+you can keep the same server and port and supply a node-approved separate login
+(for example a permitted hyphenated suffix), while retaining your station name.
+Follow the operator's login rules; a separate login is not guaranteed accepted.
