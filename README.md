@@ -2,7 +2,7 @@
 
 For JTDX desktop software, see [JTDX Companion](https://github.com/chrisraynerd/jtdx-companion).
 
-Display website: [www.dxpilot.co.uk](https://www.dxpilot.co.uk/). Latest firmware: **0.5.3** for both supported display sizes.
+Display website: [www.dxpilot.co.uk](https://www.dxpilot.co.uk/). Latest firmware: **0.5.4** for both supported display sizes.
 
 **An HF propagation, DX spotting and shack clock display for 2.8-inch CYD and 3.5-inch ESP32-3248S035C touchscreens.**
 
@@ -15,10 +15,10 @@ screen, or select the matching package from [Releases](https://github.com/chrisr
 
 | Display | Firmware package | Controllers |
 | --- | --- | --- |
-| 2.8-inch CYD, tested standard and Diymore boards | [DX-Pilot-v0.5.3-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.3/DX-Pilot-v0.5.3-firmware.zip) | ILI9341 / ILI9341V, XPT2046 touch; 320 x 240 |
-| 3.5-inch ESP32-3248S035C | [DX-Pilot-v0.5.3-cyd35c-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.3/DX-Pilot-v0.5.3-cyd35c-firmware.zip) | ST7796, GT911 capacitive touch; 480 x 320 |
+| 2.8-inch CYD, tested standard and Diymore boards | [DX-Pilot-v0.5.4-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.4/DX-Pilot-v0.5.4-firmware.zip) | ILI9341 / ILI9341V or supported ST7789, XPT2046 touch; 320 x 240 |
+| 3.5-inch ESP32-3248S035C | [DX-Pilot-v0.5.4-cyd35c-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.4/DX-Pilot-v0.5.4-cyd35c-firmware.zip) | ST7796, GT911 capacitive touch; 480 x 320 |
 
-Both display sizes have **v0.5.3 functionality**, built from the same application
+Both display sizes have **v0.5.4 functionality**, built from the same application
 source with separate display/touch profiles. The
 3.5-inch build fills the screen width and uses physical-size lettering. Both
 need 4 MB ESP32 flash. The 035R resistive model and other controller/wiring

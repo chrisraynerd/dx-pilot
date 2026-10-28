@@ -9,7 +9,7 @@ components below. Original licences and mandatory rights remain applicable.
 | ESP-IDF / SDK | 5.5.5, IDF b774170ff46; lib-builder 6671d0b | Apache-2.0 and component-specific licences; Espressif and other authors. Licence texts are under licences/esp-idf. Upstream SDK source is attached for reference; bundled submodules and Wi-Fi binaries retain their upstream terms. |
 | Adafruit GFX | 1.12.6 | BSD-2-Clause, Copyright 2012 Adafruit Industries. No GNU FreeFont-derived font is linked into this release. |
 | Adafruit ILI9341 | 1.6.4 | BSD; Limor Fried / Adafruit Industries; original notice reproduced. |
-| Adafruit ST7735/ST7789/ST7796S library (035C build) | 1.11.0 | ST7796S driver MIT, Copyright 2025 Limor Fried/Ladyada for Adafruit Industries; upstream files retain their individual notices. |
+| Adafruit ST7735/ST7789/ST7796S library (both builds) | 1.11.0 | ST7796S driver MIT, Copyright 2025 Limor Fried/Ladyada for Adafruit Industries; upstream files retain their individual notices. |
 | Adafruit BusIO | 1.17.4 | MIT; Adafruit Industries and contributors. |
 | XPT2046_Touchscreen | 1.4 | MIT; Copyright 2015 Paul Stoffregen. |
 | ArduinoJson | 7.4.3 | MIT; Benoit Blanchon. |
