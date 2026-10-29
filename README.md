@@ -17,11 +17,12 @@ screen, or select the matching package from [Releases](https://github.com/chrisr
 | --- | --- | --- |
 | 2.8-inch CYD, tested standard and Diymore boards | [DX-Pilot-v0.5.4-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.4/DX-Pilot-v0.5.4-firmware.zip) | ILI9341 / ILI9341V or supported ST7789, XPT2046 touch; 320 x 240 |
 | 3.5-inch ESP32-3248S035C | [DX-Pilot-v0.5.4-cyd35c-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.4/DX-Pilot-v0.5.4-cyd35c-firmware.zip) | ST7796, GT911 capacitive touch; 480 x 320 |
+| 3.5-inch ESP32-32E resistive (tested shared-SPI board) | [DX-Pilot-v0.5.4-cyd35r-firmware.zip](https://github.com/chrisraynerd/dx-pilot/releases/download/v0.5.4/DX-Pilot-v0.5.4-cyd35r-firmware.zip) | ST7796, XPT2046 resistive touch; 480 x 320 |
 
 Both display sizes have **v0.5.4 functionality**, built from the same application
 source with separate display/touch profiles. The
 3.5-inch build fills the screen width and uses physical-size lettering. Both
-need 4 MB ESP32 flash. The 035R resistive model and other controller/wiring
+need 4 MB ESP32 flash. Select capacitive or resistive touch for the 3.5-inch model. Other controller/wiring
 variants need different firmware. Read [INSTALL.md](INSTALL.md) before flashing.
 
 The website installer follows the newest stable firmware for each board, checked
@@ -48,7 +49,7 @@ antenna. A cluster spot is an operator's report. No reports does not mean closed
 
 ## First use and controls
 
-Fresh installations have blank station fields. On 2.8-inch CYDs, calibrate touch;
+Fresh installations have blank station fields. On 2.8-inch CYDs and the 3.5-inch resistive board, calibrate touch;
 on the capacitive 035C, use a bare finger and no calibration is needed. Enter your
 callsign, home Maidenhead locator, place and Wi-Fi in Settings. You can also join
 DX-Pilot-Setup using the password shown on the device, open http://192.168.4.1,

@@ -7,11 +7,18 @@ Choose the firmware for your board. Both display sizes are v0.5.4 with matching 
 - **2.8-inch CYD**, tested standard and Diymore ESP32-32E boards: ILI9341/ILI9341V or supported ST7789 LCD (automatically detected),
   XPT2046 resistive touch, landscape 320 x 240. Use DX-Pilot-v0.5.4-firmware.zip.
 - **3.5-inch ESP32-3248S035C**: ST7796 LCD, GT911 capacitive touch, landscape
-  480 x 320. Use DX-Pilot-v0.5.4-cyd35c-firmware.zip. The 035R is not supported.
+  480 x 320. Use DX-Pilot-v0.5.4-cyd35c-firmware.zip.
 
-Both need 4 MB ESP32 flash. USB must support data as well as power.
+- **3.5-inch ESP32-32E resistive**, tested ST7796 / XPT2046 shared-SPI board: landscape
+  480 x 320. Use DX-Pilot-v0.5.4-cyd35r-firmware.zip. This is a different firmware
+  from the 035C capacitive build; it asks for three touch-calibration taps.
+
+All supported models need 4 MB ESP32 flash. USB must support data as well as power.
 The 2.8-inch pin assignments are LCD CS15/DC2/SCK14/MOSI13/MISO12/backlight21; touch
 CS33/SCK25/MOSI32/MISO39. No additional wiring is needed on this supported board.
+The tested 3.5-inch resistive board uses LCD CS15/DC2/SCK14/MOSI13/MISO12/backlight27;
+XPT2046 touch shares SPI pins 14/13/12 with touch CS33. ESP32-32E names the processor
+module, so check the screen, touch and wiring rather than assuming every board matches.
 No VHF functions or CAT connection are included.
 
 ## Windows flashing
@@ -43,7 +50,7 @@ vendor's BOOT/RESET procedure and retry, or reduce the baud rate to 115200.
 
 ## First start
 
-The DX Pilot title appears briefly. A new 2.8-inch board asks for three touch
+The DX Pilot title appears briefly. A new 2.8-inch or 3.5-inch resistive board asks for three touch
 targets; tap and release each one. The 3.5-inch 035C uses capacitive factory
 coordinates: use a bare finger and skip calibration. Enter your station and
 Wi-Fi in Settings and Save.
